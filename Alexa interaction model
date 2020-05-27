@@ -1,0 +1,185 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "virtual monitor",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "undo",
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "list commands",
+                        "what can I say",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "exit",
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "HelloIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi world",
+                        "say hi",
+                        "hi",
+                        "say hello world",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": [
+                        "done",
+                        "cancel setup",
+                        "reset",
+                        "restart"
+                    ]
+                },
+                {
+                    "name": "GetStorageIntent",
+                    "slots": [
+                        {
+                            "name": "storage",
+                            "type": "Storage"
+                        }
+                    ],
+                    "samples": [
+                        "Storage status",
+                        "how many {storage} remaining",
+                        "how much storage is left",
+                        "how many {storage}"
+                    ]
+                },
+                {
+                    "name": "NumberOfVirtualMachinesIntent",
+                    "slots": [
+                        {
+                            "name": "vm",
+                            "type": "VMs"
+                        }
+                    ],
+                    "samples": [
+                        "cats",
+                        "number of running {vm}",
+                        "how many {vm} are running",
+                        "number of {vm}",
+                        "count the {vm}",
+                        "how many {vm} are there"
+                    ]
+                },
+                {
+                    "name": "HostSpecs",
+                    "slots": [],
+                    "samples": [
+                        "specs",
+                        "list system specs"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Storage",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "internal storage"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "petabytes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bytes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kilobytes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "megabytes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gigabytes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Terabytes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "VMs",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "services"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "operating systems"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "servers"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "virtual machine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "machines"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "virtual machines"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "v m's"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "v m s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vms"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
